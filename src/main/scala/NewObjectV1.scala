@@ -8,7 +8,7 @@ object NewObjectV1 extends App {
   conf.set("spark.testing.memory", "2147480000")
 
   val spark:SparkSession  = SparkSession.builder().master("local[1]").config("spark.testing.memory", "2147480000")
-    .appName("Stream2Learn")
+    .appName("Stream2Learn ")
     .getOrCreate()
 
   val rdd:RDD[Int] = spark.sparkContext.parallelize(List(1,2,3,4,5))
